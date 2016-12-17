@@ -52,7 +52,7 @@ class assez_instagram_widget extends WP_Widget {
 				$ulclass	= apply_filters( 'assez_list_class', 'instagram-pics instagram-size-' . $size );
 				$liclass	= apply_filters( 'assez_item_class', 'col-' . $col );
 				$aclass		= apply_filters( 'assez_a_class', '' );
-				$imgclass	= apply_filters( 'assez_img_class', '' );
+				$imgclass	= apply_filters( 'assez_img_class', 'lazy' );
 
 				?>
                 <ul class="<?php echo esc_attr( $ulclass ); ?>"><?php
