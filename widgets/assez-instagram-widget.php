@@ -65,7 +65,7 @@ class assez_instagram_widget extends WP_Widget {
 					<li class="'. esc_attr( $liclass ) .'">
 						<a href="'. esc_url( $item['link'] ) .'" target="'. esc_attr( $target ) .'"  class="'. esc_attr( $aclass ) .'">
 							' . $likes_comments . '
-							<img src="" data-src="'. esc_url( $item[$size] ) .'" alt="" title="'. esc_attr( $item['description'] ).'"  class="'. esc_attr( $imgclass ) .'"/>
+							<img src="' . esc_url( get_template_directory_uri() ) . '/lib/img/blank.png" data-src="'. esc_url( $item[$size] ) .'" alt="" title="'. esc_attr( $item['description'] ).'"  class="'. esc_attr( $imgclass ) .'"/>
 						</a>
 					</li>';
 				}
